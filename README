@@ -1,0 +1,23 @@
+add Three20
+----
+
+<pre>
+git submodule add git://github.com/facebook/three20.git three20
+python three20/src/scripts/ttmodule.py -p ./ed-pad.xcodeproj Three20  
+</pre>
+
+nib2objc
+---- 
+                                          
+<pre>
+nib2objc testnib2objc.xib > testnib2objc.m
+</pre>
+ 
+ibtool
+----
+
+<pre>
+ibtool --generate-strings-file MainMenu.strings MainMenu.xib  
+ibtool --strings-file MyNib.strings --write MyNewNib.nib MyNib.nib
+</pre>
+
