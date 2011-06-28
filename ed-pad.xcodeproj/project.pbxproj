@@ -16,16 +16,32 @@
 		320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320CC833B8AF0ACFD35E6224 /* libThree20Style.a */; };
 		320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D7DCCE32703ACAB9A45E4 /* libThree20.a */; };
 		320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320F2C48872C2E2C4DF86204 /* libThree20UI.a */; };
+		42802F3F13B98E0100884489 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F3C13B98E0100884489 /* NewsViewController.m */; };
+		42802F4013B98E0100884489 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F3E13B98E0100884489 /* EventsViewController.m */; };
+		42802F4313B990CA00884489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F4213B990CA00884489 /* AppDelegate.m */; };
+		42802F5113B9960500884489 /* dashboard_button_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4613B9960500884489 /* dashboard_button_default.png */; };
+		42802F5213B9960500884489 /* dashboard_button_focused.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4713B9960500884489 /* dashboard_button_focused.png */; };
+		42802F5313B9960500884489 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4813B9960500884489 /* facebook.png */; };
+		42802F5413B9960500884489 /* foursquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4913B9960500884489 /* foursquare.png */; };
+		42802F5513B9960500884489 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4A13B9960500884489 /* icon.png */; };
+		42802F5613B9960500884489 /* icon_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4B13B9960500884489 /* icon_ad.png */; };
+		42802F5713B9960500884489 /* icon_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4C13B9960500884489 /* icon_home.png */; };
+		42802F5813B9960500884489 /* icon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4D13B9960500884489 /* icon_logo.png */; };
+		42802F5913B9960500884489 /* rss.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4E13B9960500884489 /* rss.png */; };
+		42802F5A13B9960500884489 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4F13B9960500884489 /* twitter.png */; };
+		42802F5B13B9960500884489 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F5013B9960500884489 /* youtube.png */; };
+		42802F5E13B9EFBF00884489 /* MapscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F5D13B9EFBF00884489 /* MapscreenViewController.m */; };
+		42802F6113BA248C00884489 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6013BA248C00884489 /* HomeViewController.m */; };
+		42802F6C13BA337500884489 /* PartnersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6313BA337200884489 /* PartnersViewController.m */; };
+		42802F6D13BA337500884489 /* RidersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6513BA337300884489 /* RidersViewController.m */; };
+		42802F6E13BA337500884489 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6713BA337300884489 /* ScheduleViewController.m */; };
+		42802F6F13BA337500884489 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6913BA337400884489 /* SocialViewController.m */; };
+		42802F7013BA337500884489 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6B13BA337400884489 /* VideosViewController.m */; };
 		42DD84C813B797E300F13883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C713B797E300F13883 /* UIKit.framework */; };
 		42DD84CA13B797E300F13883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C913B797E300F13883 /* Foundation.framework */; };
 		42DD84CC13B797E300F13883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84CB13B797E300F13883 /* CoreGraphics.framework */; };
 		42DD84D213B797E300F13883 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42DD84D013B797E300F13883 /* InfoPlist.strings */; };
 		42DD84D513B797E300F13883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD84D413B797E300F13883 /* main.m */; };
-		42DD84D813B797E300F13883 /* ed_padAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD84D713B797E300F13883 /* ed_padAppDelegate.m */; };
-		42DD84DC13B797E300F13883 /* ed_padAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD84DB13B797E300F13883 /* ed_padAppDelegate_iPhone.m */; };
-		42DD84DF13B797E300F13883 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DD84DD13B797E300F13883 /* MainWindow_iPhone.xib */; };
-		42DD84E313B797E300F13883 /* ed_padAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD84E213B797E300F13883 /* ed_padAppDelegate_iPad.m */; };
-		42DD84E613B797E300F13883 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DD84E413B797E300F13883 /* MainWindow_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +204,37 @@
 		320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = three20/src/Three20Style/Three20Style.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
+		42802F3B13B98E0100884489 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = Classes/NewsViewController.h; sourceTree = "<group>"; };
+		42802F3C13B98E0100884489 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = Classes/NewsViewController.m; sourceTree = "<group>"; };
+		42802F3D13B98E0100884489 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsViewController.h; path = Classes/EventsViewController.h; sourceTree = "<group>"; };
+		42802F3E13B98E0100884489 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsViewController.m; path = Classes/EventsViewController.m; sourceTree = "<group>"; };
+		42802F4113B990CA00884489 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		42802F4213B990CA00884489 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		42802F4613B9960500884489 /* dashboard_button_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard_button_default.png; sourceTree = "<group>"; };
+		42802F4713B9960500884489 /* dashboard_button_focused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard_button_focused.png; sourceTree = "<group>"; };
+		42802F4813B9960500884489 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		42802F4913B9960500884489 /* foursquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foursquare.png; sourceTree = "<group>"; };
+		42802F4A13B9960500884489 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		42802F4B13B9960500884489 /* icon_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_ad.png; sourceTree = "<group>"; };
+		42802F4C13B9960500884489 /* icon_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_home.png; sourceTree = "<group>"; };
+		42802F4D13B9960500884489 /* icon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_logo.png; sourceTree = "<group>"; };
+		42802F4E13B9960500884489 /* rss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rss.png; sourceTree = "<group>"; };
+		42802F4F13B9960500884489 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		42802F5013B9960500884489 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
+		42802F5C13B9EFBE00884489 /* MapscreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapscreenViewController.h; path = Classes/MapscreenViewController.h; sourceTree = "<group>"; };
+		42802F5D13B9EFBF00884489 /* MapscreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapscreenViewController.m; path = Classes/MapscreenViewController.m; sourceTree = "<group>"; };
+		42802F5F13BA248C00884489 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Classes/HomeViewController.h; sourceTree = "<group>"; };
+		42802F6013BA248C00884489 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Classes/HomeViewController.m; sourceTree = "<group>"; };
+		42802F6213BA337200884489 /* PartnersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PartnersViewController.h; path = Classes/PartnersViewController.h; sourceTree = "<group>"; };
+		42802F6313BA337200884489 /* PartnersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PartnersViewController.m; path = Classes/PartnersViewController.m; sourceTree = "<group>"; };
+		42802F6413BA337200884489 /* RidersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RidersViewController.h; path = Classes/RidersViewController.h; sourceTree = "<group>"; };
+		42802F6513BA337300884489 /* RidersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RidersViewController.m; path = Classes/RidersViewController.m; sourceTree = "<group>"; };
+		42802F6613BA337300884489 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleViewController.h; path = Classes/ScheduleViewController.h; sourceTree = "<group>"; };
+		42802F6713BA337300884489 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleViewController.m; path = Classes/ScheduleViewController.m; sourceTree = "<group>"; };
+		42802F6813BA337300884489 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialViewController.h; path = Classes/SocialViewController.h; sourceTree = "<group>"; };
+		42802F6913BA337400884489 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialViewController.m; path = Classes/SocialViewController.m; sourceTree = "<group>"; };
+		42802F6A13BA337400884489 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideosViewController.h; path = Classes/VideosViewController.h; sourceTree = "<group>"; };
+		42802F6B13BA337400884489 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideosViewController.m; path = Classes/VideosViewController.m; sourceTree = "<group>"; };
 		42DD84C313B797E300F13883 /* ed-pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ed-pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DD84C713B797E300F13883 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42DD84C913B797E300F13883 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -196,14 +243,6 @@
 		42DD84D113B797E300F13883 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42DD84D313B797E300F13883 /* ed-pad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ed-pad-Prefix.pch"; sourceTree = "<group>"; };
 		42DD84D413B797E300F13883 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42DD84D613B797E300F13883 /* ed_padAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ed_padAppDelegate.h; sourceTree = "<group>"; };
-		42DD84D713B797E300F13883 /* ed_padAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ed_padAppDelegate.m; sourceTree = "<group>"; };
-		42DD84DA13B797E300F13883 /* ed_padAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ed_padAppDelegate_iPhone.h; path = iPhone/ed_padAppDelegate_iPhone.h; sourceTree = "<group>"; };
-		42DD84DB13B797E300F13883 /* ed_padAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ed_padAppDelegate_iPhone.m; path = iPhone/ed_padAppDelegate_iPhone.m; sourceTree = "<group>"; };
-		42DD84DE13B797E300F13883 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		42DD84E113B797E300F13883 /* ed_padAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ed_padAppDelegate_iPad.h; path = iPad/ed_padAppDelegate_iPad.h; sourceTree = "<group>"; };
-		42DD84E213B797E300F13883 /* ed_padAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ed_padAppDelegate_iPad.m; path = iPad/ed_padAppDelegate_iPad.m; sourceTree = "<group>"; };
-		42DD84E513B797E300F13883 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +330,51 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		42802F3A13B98DCE00884489 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42802F6213BA337200884489 /* PartnersViewController.h */,
+				42802F6313BA337200884489 /* PartnersViewController.m */,
+				42802F6413BA337200884489 /* RidersViewController.h */,
+				42802F6513BA337300884489 /* RidersViewController.m */,
+				42802F6613BA337300884489 /* ScheduleViewController.h */,
+				42802F6713BA337300884489 /* ScheduleViewController.m */,
+				42802F6813BA337300884489 /* SocialViewController.h */,
+				42802F6913BA337400884489 /* SocialViewController.m */,
+				42802F6A13BA337400884489 /* VideosViewController.h */,
+				42802F6B13BA337400884489 /* VideosViewController.m */,
+				42802F5F13BA248C00884489 /* HomeViewController.h */,
+				42802F6013BA248C00884489 /* HomeViewController.m */,
+				42802F5C13B9EFBE00884489 /* MapscreenViewController.h */,
+				42802F5D13B9EFBF00884489 /* MapscreenViewController.m */,
+				42802F4113B990CA00884489 /* AppDelegate.h */,
+				42802F4213B990CA00884489 /* AppDelegate.m */,
+				42802F3B13B98E0100884489 /* NewsViewController.h */,
+				42802F3C13B98E0100884489 /* NewsViewController.m */,
+				42802F3D13B98E0100884489 /* EventsViewController.h */,
+				42802F3E13B98E0100884489 /* EventsViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		42802F4513B9960500884489 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				42802F4613B9960500884489 /* dashboard_button_default.png */,
+				42802F4713B9960500884489 /* dashboard_button_focused.png */,
+				42802F4813B9960500884489 /* facebook.png */,
+				42802F4913B9960500884489 /* foursquare.png */,
+				42802F4A13B9960500884489 /* icon.png */,
+				42802F4B13B9960500884489 /* icon_ad.png */,
+				42802F4C13B9960500884489 /* icon_home.png */,
+				42802F4D13B9960500884489 /* icon_logo.png */,
+				42802F4E13B9960500884489 /* rss.png */,
+				42802F4F13B9960500884489 /* twitter.png */,
+				42802F5013B9960500884489 /* youtube.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		42DD84B813B797E300F13883 = {
 			isa = PBXGroup;
 			children = (
@@ -329,10 +413,7 @@
 		42DD84CD13B797E300F13883 /* ed-pad */ = {
 			isa = PBXGroup;
 			children = (
-				42DD84D613B797E300F13883 /* ed_padAppDelegate.h */,
-				42DD84D713B797E300F13883 /* ed_padAppDelegate.m */,
-				42DD84D913B797E300F13883 /* iPhone */,
-				42DD84E013B797E300F13883 /* iPad */,
+				42802F3A13B98DCE00884489 /* Classes */,
 				42DD84CE13B797E300F13883 /* Supporting Files */,
 			);
 			path = "ed-pad";
@@ -341,6 +422,7 @@
 		42DD84CE13B797E300F13883 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42802F4513B9960500884489 /* img */,
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				42DD84CF13B797E300F13883 /* ed-pad-Info.plist */,
 				42DD84D013B797E300F13883 /* InfoPlist.strings */,
@@ -348,26 +430,6 @@
 				42DD84D413B797E300F13883 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		42DD84D913B797E300F13883 /* iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				42DD84DA13B797E300F13883 /* ed_padAppDelegate_iPhone.h */,
-				42DD84DB13B797E300F13883 /* ed_padAppDelegate_iPhone.m */,
-				42DD84DD13B797E300F13883 /* MainWindow_iPhone.xib */,
-			);
-			name = iPhone;
-			sourceTree = "<group>";
-		};
-		42DD84E013B797E300F13883 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				42DD84E113B797E300F13883 /* ed_padAppDelegate_iPad.h */,
-				42DD84E213B797E300F13883 /* ed_padAppDelegate_iPad.m */,
-				42DD84E413B797E300F13883 /* MainWindow_iPad.xib */,
-			);
-			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,8 +619,17 @@
 			files = (
 				320B6C86F11D9990244A9731 /* Three20.bundle in Resources */,
 				42DD84D213B797E300F13883 /* InfoPlist.strings in Resources */,
-				42DD84DF13B797E300F13883 /* MainWindow_iPhone.xib in Resources */,
-				42DD84E613B797E300F13883 /* MainWindow_iPad.xib in Resources */,
+				42802F5113B9960500884489 /* dashboard_button_default.png in Resources */,
+				42802F5213B9960500884489 /* dashboard_button_focused.png in Resources */,
+				42802F5313B9960500884489 /* facebook.png in Resources */,
+				42802F5413B9960500884489 /* foursquare.png in Resources */,
+				42802F5513B9960500884489 /* icon.png in Resources */,
+				42802F5613B9960500884489 /* icon_ad.png in Resources */,
+				42802F5713B9960500884489 /* icon_home.png in Resources */,
+				42802F5813B9960500884489 /* icon_logo.png in Resources */,
+				42802F5913B9960500884489 /* rss.png in Resources */,
+				42802F5A13B9960500884489 /* twitter.png in Resources */,
+				42802F5B13B9960500884489 /* youtube.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,9 +641,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DD84D513B797E300F13883 /* main.m in Sources */,
-				42DD84D813B797E300F13883 /* ed_padAppDelegate.m in Sources */,
-				42DD84DC13B797E300F13883 /* ed_padAppDelegate_iPhone.m in Sources */,
-				42DD84E313B797E300F13883 /* ed_padAppDelegate_iPad.m in Sources */,
+				42802F3F13B98E0100884489 /* NewsViewController.m in Sources */,
+				42802F4013B98E0100884489 /* EventsViewController.m in Sources */,
+				42802F4313B990CA00884489 /* AppDelegate.m in Sources */,
+				42802F5E13B9EFBF00884489 /* MapscreenViewController.m in Sources */,
+				42802F6113BA248C00884489 /* HomeViewController.m in Sources */,
+				42802F6C13BA337500884489 /* PartnersViewController.m in Sources */,
+				42802F6D13BA337500884489 /* RidersViewController.m in Sources */,
+				42802F6E13BA337500884489 /* ScheduleViewController.m in Sources */,
+				42802F6F13BA337500884489 /* SocialViewController.m in Sources */,
+				42802F7013BA337500884489 /* VideosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,22 +701,6 @@
 				42DD84D113B797E300F13883 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		42DD84DD13B797E300F13883 /* MainWindow_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42DD84DE13B797E300F13883 /* en */,
-			);
-			name = MainWindow_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		42DD84E413B797E300F13883 /* MainWindow_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42DD84E513B797E300F13883 /* en */,
-			);
-			name = MainWindow_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
