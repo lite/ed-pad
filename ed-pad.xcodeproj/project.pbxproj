@@ -37,6 +37,12 @@
 		42802F6E13BA337500884489 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6713BA337300884489 /* ScheduleViewController.m */; };
 		42802F6F13BA337500884489 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6913BA337400884489 /* SocialViewController.m */; };
 		42802F7013BA337500884489 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F6B13BA337400884489 /* VideosViewController.m */; };
+		42802F7313BB6DE300884489 /* MockDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F7213BB6DE200884489 /* MockDataSource.m */; };
+		42802F7A13BB75A200884489 /* events_items.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7513BB75A200884489 /* events_items.xml */; };
+		42802F7B13BB75A200884489 /* news_items.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7613BB75A200884489 /* news_items.xml */; };
+		42802F7C13BB75A200884489 /* partners_items.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7713BB75A200884489 /* partners_items.xml */; };
+		42802F7D13BB75A200884489 /* schedule_items.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7813BB75A200884489 /* schedule_items.xml */; };
+		42802F7E13BB75A200884489 /* settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7913BB75A200884489 /* settings.xml */; };
 		42DD84C813B797E300F13883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C713B797E300F13883 /* UIKit.framework */; };
 		42DD84CA13B797E300F13883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C913B797E300F13883 /* Foundation.framework */; };
 		42DD84CC13B797E300F13883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84CB13B797E300F13883 /* CoreGraphics.framework */; };
@@ -235,6 +241,13 @@
 		42802F6913BA337400884489 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialViewController.m; path = Classes/SocialViewController.m; sourceTree = "<group>"; };
 		42802F6A13BA337400884489 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideosViewController.h; path = Classes/VideosViewController.h; sourceTree = "<group>"; };
 		42802F6B13BA337400884489 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideosViewController.m; path = Classes/VideosViewController.m; sourceTree = "<group>"; };
+		42802F7113BB6DE000884489 /* MockDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockDataSource.h; path = Classes/MockDataSource.h; sourceTree = "<group>"; };
+		42802F7213BB6DE200884489 /* MockDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockDataSource.m; path = Classes/MockDataSource.m; sourceTree = "<group>"; };
+		42802F7513BB75A200884489 /* events_items.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = events_items.xml; sourceTree = "<group>"; };
+		42802F7613BB75A200884489 /* news_items.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = news_items.xml; sourceTree = "<group>"; };
+		42802F7713BB75A200884489 /* partners_items.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = partners_items.xml; sourceTree = "<group>"; };
+		42802F7813BB75A200884489 /* schedule_items.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schedule_items.xml; sourceTree = "<group>"; };
+		42802F7913BB75A200884489 /* settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = settings.xml; sourceTree = "<group>"; };
 		42DD84C313B797E300F13883 /* ed-pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ed-pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DD84C713B797E300F13883 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42DD84C913B797E300F13883 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -333,6 +346,8 @@
 		42802F3A13B98DCE00884489 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				42802F7113BB6DE000884489 /* MockDataSource.h */,
+				42802F7213BB6DE200884489 /* MockDataSource.m */,
 				42802F6213BA337200884489 /* PartnersViewController.h */,
 				42802F6313BA337200884489 /* PartnersViewController.m */,
 				42802F6413BA337200884489 /* RidersViewController.h */,
@@ -373,6 +388,18 @@
 				42802F5013B9960500884489 /* youtube.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		42802F7413BB75A200884489 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				42802F7513BB75A200884489 /* events_items.xml */,
+				42802F7613BB75A200884489 /* news_items.xml */,
+				42802F7713BB75A200884489 /* partners_items.xml */,
+				42802F7813BB75A200884489 /* schedule_items.xml */,
+				42802F7913BB75A200884489 /* settings.xml */,
+			);
+			path = xml;
 			sourceTree = "<group>";
 		};
 		42DD84B813B797E300F13883 = {
@@ -422,6 +449,7 @@
 		42DD84CE13B797E300F13883 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42802F7413BB75A200884489 /* xml */,
 				42802F4513B9960500884489 /* img */,
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				42DD84CF13B797E300F13883 /* ed-pad-Info.plist */,
@@ -630,6 +658,11 @@
 				42802F5913B9960500884489 /* rss.png in Resources */,
 				42802F5A13B9960500884489 /* twitter.png in Resources */,
 				42802F5B13B9960500884489 /* youtube.png in Resources */,
+				42802F7A13BB75A200884489 /* events_items.xml in Resources */,
+				42802F7B13BB75A200884489 /* news_items.xml in Resources */,
+				42802F7C13BB75A200884489 /* partners_items.xml in Resources */,
+				42802F7D13BB75A200884489 /* schedule_items.xml in Resources */,
+				42802F7E13BB75A200884489 /* settings.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +684,7 @@
 				42802F6E13BA337500884489 /* ScheduleViewController.m in Sources */,
 				42802F6F13BA337500884489 /* SocialViewController.m in Sources */,
 				42802F7013BA337500884489 /* VideosViewController.m in Sources */,
+				42802F7313BB6DE300884489 /* MockDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

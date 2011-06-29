@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- CREDITs -->
+	<PreferenceCategory android:title="@string/credits_pref_cat_title" />
+	<CheckBoxPreference android:key="pAds"
+		android:title="@string/ads_pref_title" android:summary="@string/ads_pref_summary"
+		android:defaultValue="true" />                                                    
+	<PreferenceScreen android:key="pAbout"
+		android:title="@string/about_pref_title" android:summary="@string/about_pref_summary" />
+</PreferenceScreen>

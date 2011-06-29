@@ -1,0 +1,30 @@
+<item-array
+    xmlns:greendroid="http://schemas.android.com/apk/res/com.fssle.adpad">  
+    
+    <thumbnail-item
+        greendroid:enabled="false"
+        greendroid:text="RSS"
+        greendroid:subtitle="http://www.google.com \n 123-123-1234"
+        greendroid:thumbnail="@drawable/rss" />
+    <thumbnail-item
+        greendroid:enabled="false"
+        greendroid:text="Twitter"
+        greendroid:subtitle="http://www.twitter.com \n 123-123-1234"
+        greendroid:thumbnail="@drawable/twitter" />
+    <thumbnail-item
+        greendroid:enabled="false"
+        greendroid:text="Foursquare"
+        greendroid:subtitle="http://www.foursquare.com \n 123-123-1234"
+        greendroid:thumbnail="@drawable/foursquare" />
+    <thumbnail-item
+        greendroid:enabled="false"
+        greendroid:text="Facebook"
+        greendroid:subtitle="http://www.facebook.com \n 123-123-1234"
+        greendroid:thumbnail="@drawable/facebook" />    
+    <thumbnail-item
+        greendroid:enabled="false"
+        greendroid:text="YouTube"
+        greendroid:subtitle="http://www.youtube.com \n 123-123-1234"
+        greendroid:thumbnail="@drawable/youtube" />    
+            
+</item-array>

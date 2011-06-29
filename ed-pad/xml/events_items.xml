@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item-array
+    xmlns:greendroid="http://schemas.android.com/apk/res/com.fssle.adpad">
+    <thumbnail-item
+        greendroid:enabled="false"
+        greendroid:text="Ads here"
+        greendroid:subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in."
+        greendroid:thumbnail="@drawable/icon_ad" />
+
+    <separator-item
+        greendroid:text="SeparatorItem" />
+    <subtext-item
+        greendroid:text="Event 6"
+        greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+      greendroid:text="Event 7"
+      greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+      greendroid:text="Event 8"
+      greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+      greendroid:text="Ticket giveaways"
+      greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+      greendroid:text="Road Tours"
+      greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+         
+</item-array>

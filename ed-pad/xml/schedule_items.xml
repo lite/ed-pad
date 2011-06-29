@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item-array
+    xmlns:greendroid="http://schemas.android.com/apk/res/com.fssle.adpad">
+    <thumbnail-item
+        greendroid:enabled="false"
+        greendroid:text="Ads here"
+        greendroid:subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in."
+        greendroid:thumbnail="@drawable/icon_ad" />
+
+    <separator-item
+        greendroid:text="SeparatorItem" />
+    <subtext-item
+        greendroid:text="Day 1"
+        greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+        greendroid:text="Day 2"
+        greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+        greendroid:text="Day 3"
+        greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+        greendroid:text="Day 4"
+        greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+    <subtext-item
+        greendroid:text="Brackets"
+        greendroid:subtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus consequat leo, et tincidunt justo tristique in." />
+            
+</item-array>

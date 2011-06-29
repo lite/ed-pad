@@ -1,5 +1,7 @@
 #import "NewsViewController.h"
 
+#import "MockDataSource.h"
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation NewsViewController
@@ -9,23 +11,22 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+    NSLog([NSString stringWithFormat:@"%@ initWithNibName", [self class]]);
     
-    CGRect labelRect = CGRectMake(0, 0, TTNavigationFrame().size.width, TTNavigationFrame().size.height);
-    UILabel *label = [[[UILabel alloc] initWithFrame:labelRect] autorelease];
-    [label setFont:[UIFont fontWithName:@"Arial-BoldMT" size:18]];
-    [label setText:[NSString stringWithFormat:@"%@", [self description]]];
-    [label setTextColor:[UIColor colorWithHue:(CFAbsoluteTimeGetCurrent() - (int)CFAbsoluteTimeGetCurrent())
-                                   saturation:(CFAbsoluteTimeGetCurrent() - (int)CFAbsoluteTimeGetCurrent())
-                                   brightness:(CFAbsoluteTimeGetCurrent() - (int)CFAbsoluteTimeGetCurrent())
-                                        alpha:1.0]];
-    [label setTextAlignment:UITextAlignmentCenter];
-    [label setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
-    
-    TTView *view = [[TTView alloc] initWithFrame:TTScreenBounds()];
-    [view addSubview:label];
-    
-    [self setTitle:[NSString stringWithFormat:@"%@", [self class]]];
-    [self setView:view];
+    NSString* localImage = @"bundle://icon_ad.png";
+    self.dataSource = [TTListDataSource dataSourceWithObjects:
+                       [TTTableImageItem itemWithText:@"Ad Here" imageURL:localImage
+                                                  URL:nil],
+                       [TTTableImageItem itemWithText:@"Home" imageURL:localImage
+                                                  URL:@"tt://home"],
+                       [TTTableImageItem itemWithText:@"News" imageURL:localImage
+                                                  URL:@"tt://news"],
+                       [TTTableImageItem itemWithText:@"Events" imageURL:localImage
+                                                  URL:@"tt://events"],
+                       
+                       nil];
+
     return self;
 }
 
@@ -43,10 +44,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { return YES; }
 
 - (void) createModel {
-    //  MockDataSource *ds = [[MockDataSource alloc] init];
-    //  ds.addressBook.fakeLoadingDuration = 1.0;
-    //  self.dataSource = ds;
-    //  [ds release];
+    self.dataSource =  [[[MockDataSource alloc] initWithSearchQuery:@"haha"] autorelease];
 }
 
 - (id<TTTableViewDelegate>) createDelegate {
