@@ -32,20 +32,6 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ed-pad/Classes/MockDataSource.m"
-         timestampString = "331143819.575486"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "98"
-         endingLineNumber = "98"
-         landmarkName = "-requestDidFinishLoad:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
@@ -71,6 +57,20 @@
          startingLineNumber = "33"
          endingLineNumber = "33"
          landmarkName = "-initWithContents:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ed-pad/Classes/RSSFeedParser.m"
+         timestampString = "331202459.969948"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "52"
+         endingLineNumber = "52"
+         landmarkName = "-feedItems"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

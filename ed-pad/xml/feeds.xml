@@ -1,13 +1,16 @@
 <rss>
 <channel>
 <item>
-<title>Creating a 3D Tag Cloud</title>
-<link>...</link>                                  
-<pubDate>Thu, 18 Nov 2010 06:49:37 +0000</pubDate>
-<description>...</description>
-<content:encoded>...</content:encoded>
-<media:content url="http://0.gravatar.com/avatar/e2caa8fb0f5104c13fcc1dea0bd66d0e?s=96&d=identicon&r=G" medium="image">...</media:content>
-<media:content url="http://iosguy.files.wordpress.com/2010/11/rotation.png" medium="image">...</media:content>
+    <title>title1</title>
+    <link>link</link>                                  
+    <pubDate></pubDate>
+    <description>desc1</description>
+</item>
+<item>
+    <title>title2</title>
+    <link>link</link>                                  
+    <pubDate></pubDate>
+    <description>desc2</description>
 </item>
 </channel>
 </rss>

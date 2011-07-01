@@ -1,20 +1,11 @@
 #import "RSSFeedDataSource.h"
 #import "FeedItem.h"
 
-#import "MockDataModel.h"
-
 @implementation RSSFeedDataSource
 
 - (id)init {
 	if (self = [super init]) {
 		dataModel = [[RSSFeedDataModel alloc] init];
-	}
-	return self;
-}
-
-- (id)initWithData {
-	if (self = [super init]) {
-		dataModel = [[MockDataModel alloc] init];
 	}
 	return self;
 }

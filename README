@@ -1,9 +1,14 @@
-add Three20
+Three20
 ----
 
 <pre>
 git submodule add git://github.com/facebook/three20.git three20
 python three20/src/scripts/ttmodule.py -p ./ed-pad.xcodeproj Three20  
+</pre>  
+
+Add the extThree20XML.xcodeproj file to your project. Add libextThree20XML.a to your "Link Binary With Libraries" phase, and add extThree20XML as a dependency.                                                            
+<pre>
+#import "extThree20XML/extThree20XML.h"                                                       
 </pre>
 
 library
