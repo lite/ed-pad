@@ -1,5 +1,7 @@
 #import "PartnersViewController.h"
 
+#import "RSSFeedDataSource.h"
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation PartnersViewController
@@ -9,7 +11,6 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
     return self;
 }
 
@@ -27,7 +28,13 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { return YES; }
 
 - (void) createModel {
-    //  self.dataSource = ds;
+    RSSFeedDataSource *feedDataSource = [[RSSFeedDataSource alloc] init];
+    
+	self.dataSource = feedDataSource;
+	
+	TT_RELEASE_SAFELY(feedDataSource);
+
+   
 }
 
 - (id<TTTableViewDelegate>) createDelegate {

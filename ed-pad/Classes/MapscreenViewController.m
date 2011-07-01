@@ -27,7 +27,6 @@
     [self setTitle:[NSString stringWithFormat:@"%@", [self class]]];
 
     [self setView:view];
-    
     return self; 
 }
 

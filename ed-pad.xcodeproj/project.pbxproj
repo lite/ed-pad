@@ -17,7 +17,6 @@
 		320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D7DCCE32703ACAB9A45E4 /* libThree20.a */; };
 		320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320F2C48872C2E2C4DF86204 /* libThree20UI.a */; };
 		42802F3F13B98E0100884489 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F3C13B98E0100884489 /* NewsViewController.m */; };
-		42802F4013B98E0100884489 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F3E13B98E0100884489 /* EventsViewController.m */; };
 		42802F4313B990CA00884489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F4213B990CA00884489 /* AppDelegate.m */; };
 		42802F5113B9960500884489 /* dashboard_button_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4613B9960500884489 /* dashboard_button_default.png */; };
 		42802F5213B9960500884489 /* dashboard_button_focused.png in Resources */ = {isa = PBXBuildFile; fileRef = 42802F4713B9960500884489 /* dashboard_button_focused.png */; };
@@ -43,6 +42,21 @@
 		42802F7C13BB75A200884489 /* partners_items.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7713BB75A200884489 /* partners_items.xml */; };
 		42802F7D13BB75A200884489 /* schedule_items.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7813BB75A200884489 /* schedule_items.xml */; };
 		42802F7E13BB75A200884489 /* settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802F7913BB75A200884489 /* settings.xml */; };
+		42802F9313BC708700884489 /* UIDevice-Capabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F8A13BC708700884489 /* UIDevice-Capabilities.m */; };
+		42802F9413BC708700884489 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F8C13BC708700884489 /* UIDevice-Hardware.m */; };
+		42802F9513BC708700884489 /* UIDevice-IOKitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F8E13BC708700884489 /* UIDevice-IOKitExtensions.m */; };
+		42802F9613BC708700884489 /* UIDevice-Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F9013BC708700884489 /* UIDevice-Orientation.m */; };
+		42802F9713BC708700884489 /* UIDevice-Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802F9213BC708700884489 /* UIDevice-Reachability.m */; };
+		42802F9A13BC71A900884489 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 42802F9813BC71A800884489 /* wwanconnect.c */; };
+		42802F9C13BC72BA00884489 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42802F9B13BC72BA00884489 /* IOKit.framework */; };
+		42802FA813BC736C00884489 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42802FA713BC736C00884489 /* SystemConfiguration.framework */; };
+		42802FD313BCD2ED00884489 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802FCA13BCD2DD00884489 /* FeedItem.m */; };
+		42802FD413BCD2ED00884489 /* RSSFeedDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802FCC13BCD2E100884489 /* RSSFeedDataModel.m */; };
+		42802FD513BCD2ED00884489 /* RSSFeedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802FCE13BCD2E400884489 /* RSSFeedDataSource.m */; };
+		42802FD613BCD2ED00884489 /* RSSFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802FD013BCD2EA00884489 /* RSSFeedParser.m */; };
+		42802FD713BCD2ED00884489 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802FD213BCD2EC00884489 /* EventsViewController.m */; };
+		42802FD913BCD54D00884489 /* feeds.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802FD813BCD54D00884489 /* feeds.xml */; };
+		42802FEC13BCED5900884489 /* MockDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802FEB13BCED5500884489 /* MockDataModel.m */; };
 		42DD84C813B797E300F13883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C713B797E300F13883 /* UIKit.framework */; };
 		42DD84CA13B797E300F13883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C913B797E300F13883 /* Foundation.framework */; };
 		42DD84CC13B797E300F13883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84CB13B797E300F13883 /* CoreGraphics.framework */; };
@@ -212,8 +226,6 @@
 		320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
 		42802F3B13B98E0100884489 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = Classes/NewsViewController.h; sourceTree = "<group>"; };
 		42802F3C13B98E0100884489 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = Classes/NewsViewController.m; sourceTree = "<group>"; };
-		42802F3D13B98E0100884489 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsViewController.h; path = Classes/EventsViewController.h; sourceTree = "<group>"; };
-		42802F3E13B98E0100884489 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsViewController.m; path = Classes/EventsViewController.m; sourceTree = "<group>"; };
 		42802F4113B990CA00884489 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		42802F4213B990CA00884489 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		42802F4613B9960500884489 /* dashboard_button_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard_button_default.png; sourceTree = "<group>"; };
@@ -248,6 +260,33 @@
 		42802F7713BB75A200884489 /* partners_items.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = partners_items.xml; sourceTree = "<group>"; };
 		42802F7813BB75A200884489 /* schedule_items.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schedule_items.xml; sourceTree = "<group>"; };
 		42802F7913BB75A200884489 /* settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = settings.xml; sourceTree = "<group>"; };
+		42802F8913BC708700884489 /* UIDevice-Capabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Capabilities.h"; sourceTree = "<group>"; };
+		42802F8A13BC708700884489 /* UIDevice-Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Capabilities.m"; sourceTree = "<group>"; };
+		42802F8B13BC708700884489 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		42802F8C13BC708700884489 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		42802F8D13BC708700884489 /* UIDevice-IOKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-IOKitExtensions.h"; sourceTree = "<group>"; };
+		42802F8E13BC708700884489 /* UIDevice-IOKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-IOKitExtensions.m"; sourceTree = "<group>"; };
+		42802F8F13BC708700884489 /* UIDevice-Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Orientation.h"; sourceTree = "<group>"; };
+		42802F9013BC708700884489 /* UIDevice-Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Orientation.m"; sourceTree = "<group>"; };
+		42802F9113BC708700884489 /* UIDevice-Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Reachability.h"; sourceTree = "<group>"; };
+		42802F9213BC708700884489 /* UIDevice-Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Reachability.m"; sourceTree = "<group>"; };
+		42802F9813BC71A800884489 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wwanconnect.c; sourceTree = "<group>"; };
+		42802F9913BC71A900884489 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
+		42802F9B13BC72BA00884489 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		42802FA713BC736C00884489 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		42802FC913BCD2DC00884489 /* FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedItem.h; path = Classes/FeedItem.h; sourceTree = "<group>"; };
+		42802FCA13BCD2DD00884489 /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedItem.m; path = Classes/FeedItem.m; sourceTree = "<group>"; };
+		42802FCB13BCD2DF00884489 /* RSSFeedDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSFeedDataModel.h; path = Classes/RSSFeedDataModel.h; sourceTree = "<group>"; };
+		42802FCC13BCD2E100884489 /* RSSFeedDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSFeedDataModel.m; path = Classes/RSSFeedDataModel.m; sourceTree = "<group>"; };
+		42802FCD13BCD2E300884489 /* RSSFeedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSFeedDataSource.h; path = Classes/RSSFeedDataSource.h; sourceTree = "<group>"; };
+		42802FCE13BCD2E400884489 /* RSSFeedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSFeedDataSource.m; path = Classes/RSSFeedDataSource.m; sourceTree = "<group>"; };
+		42802FCF13BCD2E500884489 /* RSSFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSFeedParser.h; path = Classes/RSSFeedParser.h; sourceTree = "<group>"; };
+		42802FD013BCD2EA00884489 /* RSSFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSFeedParser.m; path = Classes/RSSFeedParser.m; sourceTree = "<group>"; };
+		42802FD113BCD2EB00884489 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsViewController.h; path = Classes/EventsViewController.h; sourceTree = "<group>"; };
+		42802FD213BCD2EC00884489 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsViewController.m; path = Classes/EventsViewController.m; sourceTree = "<group>"; };
+		42802FD813BCD54D00884489 /* feeds.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = feeds.xml; sourceTree = "<group>"; };
+		42802FEA13BCED5300884489 /* MockDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockDataModel.h; path = Classes/MockDataModel.h; sourceTree = "<group>"; };
+		42802FEB13BCED5500884489 /* MockDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockDataModel.m; path = Classes/MockDataModel.m; sourceTree = "<group>"; };
 		42DD84C313B797E300F13883 /* ed-pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ed-pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DD84C713B797E300F13883 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42DD84C913B797E300F13883 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -274,6 +313,8 @@
 				42DD84C813B797E300F13883 /* UIKit.framework in Frameworks */,
 				42DD84CA13B797E300F13883 /* Foundation.framework in Frameworks */,
 				42DD84CC13B797E300F13883 /* CoreGraphics.framework in Frameworks */,
+				42802F9C13BC72BA00884489 /* IOKit.framework in Frameworks */,
+				42802FA813BC736C00884489 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +387,18 @@
 		42802F3A13B98DCE00884489 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				42802FEA13BCED5300884489 /* MockDataModel.h */,
+				42802FEB13BCED5500884489 /* MockDataModel.m */,
+				42802FC913BCD2DC00884489 /* FeedItem.h */,
+				42802FCA13BCD2DD00884489 /* FeedItem.m */,
+				42802FCB13BCD2DF00884489 /* RSSFeedDataModel.h */,
+				42802FCC13BCD2E100884489 /* RSSFeedDataModel.m */,
+				42802FCD13BCD2E300884489 /* RSSFeedDataSource.h */,
+				42802FCE13BCD2E400884489 /* RSSFeedDataSource.m */,
+				42802FCF13BCD2E500884489 /* RSSFeedParser.h */,
+				42802FD013BCD2EA00884489 /* RSSFeedParser.m */,
+				42802FD113BCD2EB00884489 /* EventsViewController.h */,
+				42802FD213BCD2EC00884489 /* EventsViewController.m */,
 				42802F7113BB6DE000884489 /* MockDataSource.h */,
 				42802F7213BB6DE200884489 /* MockDataSource.m */,
 				42802F6213BA337200884489 /* PartnersViewController.h */,
@@ -366,8 +419,6 @@
 				42802F4213B990CA00884489 /* AppDelegate.m */,
 				42802F3B13B98E0100884489 /* NewsViewController.h */,
 				42802F3C13B98E0100884489 /* NewsViewController.m */,
-				42802F3D13B98E0100884489 /* EventsViewController.h */,
-				42802F3E13B98E0100884489 /* EventsViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -393,6 +444,7 @@
 		42802F7413BB75A200884489 /* xml */ = {
 			isa = PBXGroup;
 			children = (
+				42802FD813BCD54D00884489 /* feeds.xml */,
 				42802F7513BB75A200884489 /* events_items.xml */,
 				42802F7613BB75A200884489 /* news_items.xml */,
 				42802F7713BB75A200884489 /* partners_items.xml */,
@@ -400,6 +452,25 @@
 				42802F7913BB75A200884489 /* settings.xml */,
 			);
 			path = xml;
+			sourceTree = "<group>";
+		};
+		42802F8813BC708600884489 /* uidevice-extension */ = {
+			isa = PBXGroup;
+			children = (
+				42802F9813BC71A800884489 /* wwanconnect.c */,
+				42802F9913BC71A900884489 /* wwanconnect.h */,
+				42802F8913BC708700884489 /* UIDevice-Capabilities.h */,
+				42802F8A13BC708700884489 /* UIDevice-Capabilities.m */,
+				42802F8B13BC708700884489 /* UIDevice-Hardware.h */,
+				42802F8C13BC708700884489 /* UIDevice-Hardware.m */,
+				42802F8D13BC708700884489 /* UIDevice-IOKitExtensions.h */,
+				42802F8E13BC708700884489 /* UIDevice-IOKitExtensions.m */,
+				42802F8F13BC708700884489 /* UIDevice-Orientation.h */,
+				42802F9013BC708700884489 /* UIDevice-Orientation.m */,
+				42802F9113BC708700884489 /* UIDevice-Reachability.h */,
+				42802F9213BC708700884489 /* UIDevice-Reachability.m */,
+			);
+			path = "uidevice-extension";
 			sourceTree = "<group>";
 		};
 		42DD84B813B797E300F13883 = {
@@ -422,6 +493,8 @@
 		42DD84C613B797E300F13883 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42802FA713BC736C00884489 /* SystemConfiguration.framework */,
+				42802F9B13BC72BA00884489 /* IOKit.framework */,
 				3201088596B4756681693700 /* Three20UICommon.xcodeproj */,
 				320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */,
 				320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */,
@@ -440,6 +513,7 @@
 		42DD84CD13B797E300F13883 /* ed-pad */ = {
 			isa = PBXGroup;
 			children = (
+				42802F8813BC708600884489 /* uidevice-extension */,
 				42802F3A13B98DCE00884489 /* Classes */,
 				42DD84CE13B797E300F13883 /* Supporting Files */,
 			);
@@ -663,6 +737,7 @@
 				42802F7C13BB75A200884489 /* partners_items.xml in Resources */,
 				42802F7D13BB75A200884489 /* schedule_items.xml in Resources */,
 				42802F7E13BB75A200884489 /* settings.xml in Resources */,
+				42802FD913BCD54D00884489 /* feeds.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +750,6 @@
 			files = (
 				42DD84D513B797E300F13883 /* main.m in Sources */,
 				42802F3F13B98E0100884489 /* NewsViewController.m in Sources */,
-				42802F4013B98E0100884489 /* EventsViewController.m in Sources */,
 				42802F4313B990CA00884489 /* AppDelegate.m in Sources */,
 				42802F5E13B9EFBF00884489 /* MapscreenViewController.m in Sources */,
 				42802F6113BA248C00884489 /* HomeViewController.m in Sources */,
@@ -685,6 +759,18 @@
 				42802F6F13BA337500884489 /* SocialViewController.m in Sources */,
 				42802F7013BA337500884489 /* VideosViewController.m in Sources */,
 				42802F7313BB6DE300884489 /* MockDataSource.m in Sources */,
+				42802F9313BC708700884489 /* UIDevice-Capabilities.m in Sources */,
+				42802F9413BC708700884489 /* UIDevice-Hardware.m in Sources */,
+				42802F9513BC708700884489 /* UIDevice-IOKitExtensions.m in Sources */,
+				42802F9613BC708700884489 /* UIDevice-Orientation.m in Sources */,
+				42802F9713BC708700884489 /* UIDevice-Reachability.m in Sources */,
+				42802F9A13BC71A900884489 /* wwanconnect.c in Sources */,
+				42802FD313BCD2ED00884489 /* FeedItem.m in Sources */,
+				42802FD413BCD2ED00884489 /* RSSFeedDataModel.m in Sources */,
+				42802FD513BCD2ED00884489 /* RSSFeedDataSource.m in Sources */,
+				42802FD613BCD2ED00884489 /* RSSFeedParser.m in Sources */,
+				42802FD713BCD2ED00884489 /* EventsViewController.m in Sources */,
+				42802FEC13BCED5900884489 /* MockDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,34 +1,37 @@
 
 #import "EventsViewController.h"
+#import "RSSFeedDataSource.h"
 
 @implementation EventsViewController
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// private
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    return self;
+- (id)init {
+	if (self = [super init]) {
+		self.variableHeightRows = YES;
+	}
+	return self;
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// UIViewController
-
-- (void)loadView {
-  [super loadView];
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	
+	self.navigationBarTintColor = [UIColor blackColor];
+	self.title = @"iOS Guy RSS Feed";
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { return YES; }
 
-- (void) createModel {
-//  self.dataSource = ds;
+#pragma mark --
+#pragma mark TTModelViewController methods
+
+- (void)createModel {
+	RSSFeedDataSource *feedDataSource = [[RSSFeedDataSource alloc] init];
+
+	self.dataSource = feedDataSource;
+	
+	TT_RELEASE_SAFELY(feedDataSource);
 }
 
-- (id<TTTableViewDelegate>) createDelegate {
-  
-  TTTableViewDragRefreshDelegate *delegate = [[TTTableViewDragRefreshDelegate alloc] initWithController:self];
-
-  return [delegate autorelease];
+- (id<UITableViewDelegate>)createDelegate {
+	return [[[TTTableViewDragRefreshDelegate alloc] initWithController:self] autorelease];
 }
 
 @end

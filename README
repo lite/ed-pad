@@ -6,6 +6,11 @@ git submodule add git://github.com/facebook/three20.git three20
 python three20/src/scripts/ttmodule.py -p ./ed-pad.xcodeproj Three20  
 </pre>
 
+library
+----
+http://iosguy.com/2010/09/06/saving-work-with-three20/
+http://github.com/erica/uidevice-extension/
+
 nib2objc
 ---- 
                                           

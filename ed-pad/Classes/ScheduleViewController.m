@@ -1,5 +1,7 @@
 #import "ScheduleViewController.h"
 
+#import "MockDataSource.h"
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation ScheduleViewController
@@ -26,7 +28,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { return YES; }
 
 - (void) createModel {
-    //  self.dataSource = ds;
+    self.dataSource = [[[MockDataSource alloc] initWithSearchQuery:@"haha"] autorelease];
 }
 
 - (id<TTTableViewDelegate>) createDelegate {
