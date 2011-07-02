@@ -1,37 +1,46 @@
 #import <Three20/Three20.h>
 
-@class Model;
-//TTListDataSource
-@interface MockDataSource : TTSectionedDataSource {
-    Model* _feed_model;
+/*
+ * a searchable model which can be configured with a 
+ * loading and/or search time
+ */
+@interface MockAddressBook : NSObject <TTModel> {
+    NSMutableArray* _delegates;
+    NSMutableArray* _names;
+    NSArray* _allNames;
+    NSTimer* _fakeSearchTimer;
+    NSTimeInterval _fakeSearchDuration;
+    NSTimer* _fakeLoadingTimer;
+    NSTimeInterval _fakeLoadingDuration;
 }
 
-- (id)initWithSearchQuery:(NSString*)searchQuery;
+@property(nonatomic,retain) NSArray* names;
+@property(nonatomic) NSTimeInterval fakeSearchDuration;
+@property(nonatomic) NSTimeInterval fakeLoadingDuration;
 
-@end                                               
++ (NSMutableArray*)fakeNames;
 
-@interface Feed : NSObject {
-    NSString* _text;
-    NSString* _source;
-    NSString* _ftype;
-    NSString* _img;
-}
+- (id)initWithNames:(NSArray*)names;
 
-@property (nonatomic, copy)   NSString* text;
-@property (nonatomic, copy)   NSString* source;
-@property (nonatomic, copy)   NSString* ftype;
-@property (nonatomic, copy)   NSString* img;
+
+- (void)search:(NSString*)text;
 
 @end
 
-@interface Model : TTURLRequestModel {
-    NSString* _searchQuery;
-    NSArray*  _feeds;
+@interface MockDataSource : TTSectionedDataSource {
+    MockAddressBook* _addressBook;
 }
 
-@property (nonatomic, copy)     NSString* searchQuery;
-@property (nonatomic, readonly) NSArray*  feeds;
+@property(nonatomic,readonly) MockAddressBook* addressBook;
 
-- (id)initWithSearchQuery:(NSString*)searchQuery;
+@end
+
+@interface MockSearchDataSource : TTSectionedDataSource {
+    MockAddressBook* _addressBook;
+}
+
+@property(nonatomic,readonly) MockAddressBook* addressBook;
+
+- (id)initWithDuration:(NSTimeInterval)duration;
 
 @end

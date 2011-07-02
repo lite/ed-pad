@@ -43,13 +43,6 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { return YES; }
 
-- (void) createModel {
-    //  MockDataSource *ds = [[MockDataSource alloc] init];
-    //  ds.addressBook.fakeLoadingDuration = 1.0;
-    //  self.dataSource = ds;
-    //  [ds release];
-}
-
 - (id<TTTableViewDelegate>) createDelegate {
     
     TTTableViewDragRefreshDelegate *delegate = [[TTTableViewDragRefreshDelegate alloc] initWithController:self];

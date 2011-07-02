@@ -31,3 +31,10 @@ ibtool --generate-strings-file MainMenu.strings MainMenu.xib
 ibtool --strings-file MyNib.strings --write MyNewNib.nib MyNib.nib
 </pre>
 
+deploy
+----
+            
+http://testflightapp.com/
+http://appmark.it/apps/
+http://www.appfigures.com/
+http://publishur.com/

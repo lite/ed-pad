@@ -1,3 +1,6 @@
 [submodule "three20"]
 	path = three20
 	url = git://github.com/facebook/three20.git 
+[submodule "AQGridView"]
+	path = AQGridView
+	url = git://github.com/AlanQuatermain/AQGridView.git

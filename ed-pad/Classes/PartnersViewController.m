@@ -2,8 +2,6 @@
 
 #import "RSSFeedDataSource.h"
 
-#import "MockDataSource.h"
-#import "FeedItem.h"
 #import <extThree20XML/extThree20XML.h>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -49,24 +47,6 @@
   [super dealloc];
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// UIViewController
-
-- (void)loadView {
-    [super loadView];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { return YES; }
-
-- (void) createModel {
-    self.dataSource =  [[[MockDataSource alloc] initWithSearchQuery:@"haha"] autorelease];
-}
-
-- (id<TTTableViewDelegate>) createDelegate {
-    
-    TTTableViewDragRefreshDelegate *delegate = [[TTTableViewDragRefreshDelegate alloc] initWithController:self];
-    
-    return [delegate autorelease];
-}
 
 @end

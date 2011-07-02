@@ -57,6 +57,10 @@
 		42802FD713BCD2ED00884489 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42802FD213BCD2EC00884489 /* EventsViewController.m */; };
 		42802FD913BCD54D00884489 /* feeds.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42802FD813BCD54D00884489 /* feeds.xml */; };
 		4280309E13BDCB1900884489 /* MockPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4280309D13BDCAF900884489 /* MockPhotoSource.m */; };
+		4280317013BF6B0D00884489 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4280316F13BF6B0D00884489 /* iAd.framework */; };
+		428031C213BF7EC300884489 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428031C113BF7EC100884489 /* TabBarController.m */; };
+		428031C513BF81BF00884489 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428031C413BF81BC00884489 /* AboutViewController.m */; };
+		428031CD13BF885200884489 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 428031CC13BF885000884489 /* Default.png */; };
 		42DD84C813B797E300F13883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C713B797E300F13883 /* UIKit.framework */; };
 		42DD84CA13B797E300F13883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84C913B797E300F13883 /* Foundation.framework */; };
 		42DD84CC13B797E300F13883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84CB13B797E300F13883 /* CoreGraphics.framework */; };
@@ -309,6 +313,12 @@
 		4280301513BDACB500884489 /* extThree20XML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20XML.xcodeproj; path = three20/src/extThree20XML/extThree20XML.xcodeproj; sourceTree = "<group>"; };
 		4280309C13BDCAED00884489 /* MockPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockPhotoSource.h; path = Classes/MockPhotoSource.h; sourceTree = "<group>"; };
 		4280309D13BDCAF900884489 /* MockPhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockPhotoSource.m; path = Classes/MockPhotoSource.m; sourceTree = "<group>"; };
+		4280316F13BF6B0D00884489 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		428031C013BF7EBE00884489 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = Classes/TabBarController.h; sourceTree = "<group>"; };
+		428031C113BF7EC100884489 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = Classes/TabBarController.m; sourceTree = "<group>"; };
+		428031C313BF81BA00884489 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = Classes/AboutViewController.h; sourceTree = "<group>"; };
+		428031C413BF81BC00884489 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Classes/AboutViewController.m; sourceTree = "<group>"; };
+		428031CC13BF885000884489 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		42DD84C313B797E300F13883 /* ed-pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ed-pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DD84C713B797E300F13883 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42DD84C913B797E300F13883 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -337,6 +347,7 @@
 				42DD84CC13B797E300F13883 /* CoreGraphics.framework in Frameworks */,
 				42802F9C13BC72BA00884489 /* IOKit.framework in Frameworks */,
 				42802FA813BC736C00884489 /* SystemConfiguration.framework in Frameworks */,
+				4280317013BF6B0D00884489 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +420,10 @@
 		42802F3A13B98DCE00884489 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				428031C313BF81BA00884489 /* AboutViewController.h */,
+				428031C413BF81BC00884489 /* AboutViewController.m */,
+				428031C013BF7EBE00884489 /* TabBarController.h */,
+				428031C113BF7EC100884489 /* TabBarController.m */,
 				4280309C13BDCAED00884489 /* MockPhotoSource.h */,
 				4280309D13BDCAF900884489 /* MockPhotoSource.m */,
 				42802FC913BCD2DC00884489 /* FeedItem.h */,
@@ -448,6 +463,7 @@
 		42802F4513B9960500884489 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				428031CC13BF885000884489 /* Default.png */,
 				42802F4613B9960500884489 /* dashboard_button_default.png */,
 				42802F4713B9960500884489 /* dashboard_button_focused.png */,
 				42802F4813B9960500884489 /* facebook.png */,
@@ -540,6 +556,7 @@
 		42DD84C613B797E300F13883 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4280316F13BF6B0D00884489 /* iAd.framework */,
 				42802FA713BC736C00884489 /* SystemConfiguration.framework */,
 				42802F9B13BC72BA00884489 /* IOKit.framework */,
 				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
@@ -797,6 +814,7 @@
 				42802F7D13BB75A200884489 /* schedule_items.xml in Resources */,
 				42802F7E13BB75A200884489 /* settings.xml in Resources */,
 				42802FD913BCD54D00884489 /* feeds.xml in Resources */,
+				428031CD13BF885200884489 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +848,8 @@
 				42802FD613BCD2ED00884489 /* RSSFeedParser.m in Sources */,
 				42802FD713BCD2ED00884489 /* EventsViewController.m in Sources */,
 				4280309E13BDCB1900884489 /* MockPhotoSource.m in Sources */,
+				428031C213BF7EC300884489 /* TabBarController.m in Sources */,
+				428031C513BF81BF00884489 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
