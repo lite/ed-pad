@@ -1,53 +1,93 @@
 #import "MapscreenViewController.h"
 
+#import "CLLocationManager_sim.h"
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation MapscreenViewController
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// NSObject
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
-    CGRect labelRect = CGRectMake(0, 0, TTNavigationFrame().size.width, TTNavigationFrame().size.height);
-    UILabel *label = [[[UILabel alloc] initWithFrame:labelRect] autorelease];
-    [label setFont:[UIFont fontWithName:@"Arial-BoldMT" size:18]];
-    [label setText:[NSString stringWithFormat:@"%@", [self description]]];
-    [label setTextColor:[UIColor colorWithHue:(CFAbsoluteTimeGetCurrent() - (int)CFAbsoluteTimeGetCurrent())
-                                   saturation:(CFAbsoluteTimeGetCurrent() - (int)CFAbsoluteTimeGetCurrent())
-                                   brightness:(CFAbsoluteTimeGetCurrent() - (int)CFAbsoluteTimeGetCurrent())
-                                        alpha:1.0]];
-    [label setTextAlignment:UITextAlignmentCenter];
-    [label setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
-    
-    TTView *view = [[TTView alloc] initWithFrame:TTScreenBounds()];
-    [view addSubview:label];
-    
-    [self setTitle:[NSString stringWithFormat:@"%@", [self class]]];
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        // Custom initialization
+    }
+    return self;
+}
 
-    [self setView:view];
-    return self; 
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+//    CLLocationManager_sim* locationManager = [[CLLocationManager_sim alloc] init];
+    locationManager.delegate=self;
+    locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+    locationManager.distanceFilter=1000.0f;
+    [locationManager startUpdatingLocation];
 }
 
 - (void)dealloc {
-  [super dealloc];
+    [super dealloc];
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// UIViewController
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    NSLog(@"---------- locationManager didUpdateToLocation");
 
-- (void)loadView {
-    [super loadView];
+    mapView=[[MKMapView alloc] initWithFrame:self.view.bounds];
+    mapView.showsUserLocation=TRUE;
+    mapView.mapType=MKMapTypeStandard;
+//    mapView.mapType=MKMapTypeSatellite;
+//    mapView.mapType=MKMapTypeHybrid;
+    mapView.delegate=self;
+    /*Region and Zoom*/
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    span.latitudeDelta=0.2;
+    span.longitudeDelta=0.2;
+    
+    CLLocationCoordinate2D location=[newLocation coordinate];
+    //    CLLocationCoordinate2D location=mapView.userLocation.coordinate;
+    //    location.latitude=32;
+    //    location.longitude=132;
+    //    CLLocationCoordinate2D location=[[locationManager location] coordinate];
+    
+    region.span=span;
+    region.center=location;
+    
+    /*Geocoder Stuff*/
+    
+    geoCoder=[[MKReverseGeocoder alloc] initWithCoordinate:location];
+    geoCoder.delegate=self;
+    [geoCoder start];
+    
+    
+    [mapView setRegion:region animated:TRUE];
+    [mapView regionThatFits:region];
+    [mapView setZoomEnabled:YES];
+    [mapView setScrollEnabled:YES];
+    [self.view addSubview:mapView];
+    NSLog(@"Location after calibration, user location (%f, %f)", mapView.userLocation.coordinate.latitude, mapView.userLocation.coordinate.longitude);
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { return YES; }
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError *)error{
+	NSLog(@"Reverse Geocoder Errored");
+    
+}
 
-- (id<TTTableViewDelegate>) createDelegate {
-    
-    TTTableViewDragRefreshDelegate *delegate = [[TTTableViewDragRefreshDelegate alloc] initWithController:self];
-    
-    return [delegate autorelease];
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark{
+	NSLog(@"Geocoder completed");
+	mPlacemark=placemark;
+	[mapView addAnnotation:placemark];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
+	NSLog(@"-------viewForAnnotation-------");
+    MKPinAnnotationView *annView=[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CameraAnnotation"];
+    annView.pinColor=MKPinAnnotationColorPurple;
+    annView.canShowCallout=YES;
+    annView.animatesDrop=TRUE;
+	return annView;
 }
 
 @end

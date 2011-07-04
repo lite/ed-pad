@@ -66,6 +66,10 @@
 		42DD84CC13B797E300F13883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD84CB13B797E300F13883 /* CoreGraphics.framework */; };
 		42DD84D213B797E300F13883 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42DD84D013B797E300F13883 /* InfoPlist.strings */; };
 		42DD84D513B797E300F13883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD84D413B797E300F13883 /* main.m */; };
+		42EE727D13C2123C00BE3E26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE727C13C2123C00BE3E26 /* MapKit.framework */; };
+		42EE728213C21FCE00BE3E26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EE728113C21FCE00BE3E26 /* CoreLocation.framework */; };
+		42EE728A13C2217300BE3E26 /* CLLocationManager_sim.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE728713C2217300BE3E26 /* CLLocationManager_sim.m */; };
+		42EE728B13C2217300BE3E26 /* UtilitiesGeo.c in Sources */ = {isa = PBXBuildFile; fileRef = 42EE728813C2217300BE3E26 /* UtilitiesGeo.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,6 +331,12 @@
 		42DD84D113B797E300F13883 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42DD84D313B797E300F13883 /* ed-pad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ed-pad-Prefix.pch"; sourceTree = "<group>"; };
 		42DD84D413B797E300F13883 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42EE727C13C2123C00BE3E26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		42EE728113C21FCE00BE3E26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		42EE728613C2217300BE3E26 /* CLLocationManager_sim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLocationManager_sim.h; sourceTree = "<group>"; };
+		42EE728713C2217300BE3E26 /* CLLocationManager_sim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLocationManager_sim.m; sourceTree = "<group>"; };
+		42EE728813C2217300BE3E26 /* UtilitiesGeo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UtilitiesGeo.c; sourceTree = "<group>"; };
+		42EE728913C2217300BE3E26 /* UtilitiesGeo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesGeo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +358,8 @@
 				42802F9C13BC72BA00884489 /* IOKit.framework in Frameworks */,
 				42802FA813BC736C00884489 /* SystemConfiguration.framework in Frameworks */,
 				4280317013BF6B0D00884489 /* iAd.framework in Frameworks */,
+				42EE727D13C2123C00BE3E26 /* MapKit.framework in Frameworks */,
+				42EE728213C21FCE00BE3E26 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +568,8 @@
 		42DD84C613B797E300F13883 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42EE728113C21FCE00BE3E26 /* CoreLocation.framework */,
+				42EE727C13C2123C00BE3E26 /* MapKit.framework */,
 				4280316F13BF6B0D00884489 /* iAd.framework */,
 				42802FA713BC736C00884489 /* SystemConfiguration.framework */,
 				42802F9B13BC72BA00884489 /* IOKit.framework */,
@@ -570,6 +584,7 @@
 		42DD84CD13B797E300F13883 /* ed-pad */ = {
 			isa = PBXGroup;
 			children = (
+				42EE728513C2217300BE3E26 /* CLLocationManager-simulator */,
 				42802F8813BC708600884489 /* uidevice-extension */,
 				42802F3A13B98DCE00884489 /* Classes */,
 				42DD84CE13B797E300F13883 /* Supporting Files */,
@@ -589,6 +604,17 @@
 				42DD84D413B797E300F13883 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42EE728513C2217300BE3E26 /* CLLocationManager-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				42EE728613C2217300BE3E26 /* CLLocationManager_sim.h */,
+				42EE728713C2217300BE3E26 /* CLLocationManager_sim.m */,
+				42EE728813C2217300BE3E26 /* UtilitiesGeo.c */,
+				42EE728913C2217300BE3E26 /* UtilitiesGeo.h */,
+			);
+			path = "CLLocationManager-simulator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -850,6 +876,8 @@
 				4280309E13BDCB1900884489 /* MockPhotoSource.m in Sources */,
 				428031C213BF7EC300884489 /* TabBarController.m in Sources */,
 				428031C513BF81BF00884489 /* AboutViewController.m in Sources */,
+				42EE728A13C2217300BE3E26 /* CLLocationManager_sim.m in Sources */,
+				42EE728B13C2217300BE3E26 /* UtilitiesGeo.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
