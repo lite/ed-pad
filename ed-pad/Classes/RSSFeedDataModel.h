@@ -4,7 +4,7 @@
 
 @interface RSSFeedDataModel : TTModel<RSSFeedParserDelegate> {
 	RSSFeedParser *parser;
-	
+
 	BOOL done;
 	BOOL loading;
 }

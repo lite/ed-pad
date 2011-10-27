@@ -11,14 +11,14 @@
     [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 
     NSLog([NSString stringWithFormat:@"%@ initWithNibName", [self class]]);
-    
+
     NSString* localImage = @"bundle://icon_ad.png";
     self.dataSource = [TTListDataSource dataSourceWithObjects:
                        [TTTableImageItem itemWithText:@"Ad Here" imageURL:localImage URL:nil],
                        [TTTableImageItem itemWithText:@"Home" imageURL:localImage URL:@"tt://home"],
                        [TTTableImageItem itemWithText:@"News" imageURL:localImage URL:@"tt://news"],
                        [TTTableImageItem itemWithText:@"Events" imageURL:localImage URL:@"tt://events"],
-                       
+
                        nil];
 
     return self;

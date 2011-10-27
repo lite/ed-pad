@@ -3,12 +3,12 @@ Three20
 
 <pre>
 git submodule add git://github.com/facebook/three20.git three20
-python three20/src/scripts/ttmodule.py -p ./ed-pad.xcodeproj Three20  
-</pre>  
+python three20/src/scripts/ttmodule.py -p ./ed-pad.xcodeproj Three20
+</pre>
 
-Add the extThree20XML.xcodeproj file to your project. Add libextThree20XML.a to your "Link Binary With Libraries" phase, and add extThree20XML as a dependency.                                                            
+Add the extThree20XML.xcodeproj file to your project. Add libextThree20XML.a to your "Link Binary With Libraries" phase, and add extThree20XML as a dependency.
 <pre>
-#import "extThree20XML/extThree20XML.h"                                                       
+#import "extThree20XML/extThree20XML.h"
 </pre>
 
 library
@@ -17,23 +17,23 @@ http://iosguy.com/2010/09/06/saving-work-with-three20/
 http://github.com/erica/uidevice-extension/
 
 nib2objc
----- 
-                                          
+----
+
 <pre>
 nib2objc testnib2objc.xib > testnib2objc.m
 </pre>
- 
+
 ibtool
 ----
 
 <pre>
-ibtool --generate-strings-file MainMenu.strings MainMenu.xib  
+ibtool --generate-strings-file MainMenu.strings MainMenu.xib
 ibtool --strings-file MyNib.strings --write MyNewNib.nib MyNib.nib
 </pre>
 
 deploy
 ----
-            
+
 http://testflightapp.com/
 http://appmark.it/apps/
 http://www.appfigures.com/

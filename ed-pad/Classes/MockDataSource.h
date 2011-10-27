@@ -1,7 +1,7 @@
 #import <Three20/Three20.h>
 
 /*
- * a searchable model which can be configured with a 
+ * a searchable model which can be configured with a
  * loading and/or search time
  */
 @interface MockAddressBook : NSObject <TTModel> {

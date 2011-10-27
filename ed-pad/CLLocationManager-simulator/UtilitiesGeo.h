@@ -22,14 +22,14 @@
 #define SPEED_OF_LIGHT_MPS     (299792458)	/* exact */
 
 // degrees/radians conversion macros
-#define Deg_to_Rad(X) (X*M_PI/180.0) 
+#define Deg_to_Rad(X) (X*M_PI/180.0)
 #define Rad_to_Deg(X) (X*180.0/M_PI)
 
 
 /*-------------------------------------------------------------------------
  * Given two lat/lon points on earth, calculates the heading
- * from lat1/lon1 to lat2/lon2.  
- * 
+ * from lat1/lon1 to lat2/lon2.
+ *
  * lat/lon params in radians
  * result in radians
  *-------------------------------------------------------------------------*/
@@ -37,8 +37,8 @@ double headingInRadians(double lat1, double lon1, double lat2, double lon2);
 
 /*-------------------------------------------------------------------------
  * Given two lat/lon points on earth, calculates the heading
- * from lat1/lon1 to lat2/lon2.  
- * 
+ * from lat1/lon1 to lat2/lon2.
+ *
  * lat/lon params in degrees
  * result in degrees
  *-------------------------------------------------------------------------*/
@@ -50,7 +50,7 @@ double headingInDegrees(double lat1, double lon1, double lat2, double lon2);
  *
  * all params in radians
  *-------------------------------------------------------------------------*/
-void destCoordsInRadians(double lat1, double lon1, 
+void destCoordsInRadians(double lat1, double lon1,
 						 double distanceMeters, double bearing,
 						 double* lat2, double* lon2);
 
@@ -60,7 +60,7 @@ void destCoordsInRadians(double lat1, double lon1,
  *
  * all params in degrees
  *-------------------------------------------------------------------------*/
-void destCoordsInDegrees(double lat1, double lon1, 
+void destCoordsInDegrees(double lat1, double lon1,
 						 double distanceMeters, double bearing,
 						 double* lat2, double* lon2);
 

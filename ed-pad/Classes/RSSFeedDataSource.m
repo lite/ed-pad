@@ -19,14 +19,14 @@
 
 - (void)tableViewDidLoadModel:(UITableView *)tableView {
 	NSArray *modelItems = [dataModel modelItems];
-	
+
 	NSMutableArray *updatedItems = [NSMutableArray arrayWithCapacity:modelItems.count];
-	
+
 	for (FeedItem *feedItem in modelItems) {
 		TTTableMessageItem *item = [TTTableMessageItem itemWithTitle:feedItem.title caption:feedItem.category text:feedItem.description timestamp:feedItem.date imageURL:feedItem.imageURL URL:feedItem.link];
 		[updatedItems addObject:item];
 	}
-	
+
 	self.items = updatedItems;
 }
 
@@ -56,7 +56,7 @@
 
 - (void)dealloc {
 	[dataModel release];
-	
+
 	[super dealloc];
 }
 

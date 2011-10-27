@@ -13,7 +13,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
+
 	self.navigationBarTintColor = [UIColor blackColor];
 	self.title = @"iOS Guy RSS Feed";
 }
@@ -26,7 +26,7 @@
 	RSSFeedDataSource *feedDataSource = [[RSSFeedDataSource alloc] init];
 
 	self.dataSource = feedDataSource;
-	
+
 	TT_RELEASE_SAFELY(feedDataSource);
 }
 

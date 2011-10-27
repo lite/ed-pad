@@ -36,7 +36,7 @@
 
 - (void)fakeSearch:(NSString*)text {
     self.names = [NSMutableArray array];
-    
+
     if (text.length) {
         text = [text lowercaseString];
         for (NSString* name in _allNames) {
@@ -45,13 +45,13 @@
             }
         }
     }
-    
+
     [_delegates perform:@selector(modelDidFinishLoad:) withObject:self];
 }
 
 - (void)fakeSearchReady:(NSTimer*)timer {
     _fakeSearchTimer = nil;
-    
+
     NSString* text = timer.userInfo;
     [self fakeSearch:text];
 }
@@ -111,9 +111,9 @@
 
 - (void) fakeLoadingReady {
     _fakeLoadingTimer = nil;
-    
+
     [self loadNames];
-    
+
     [_delegates perform:@selector(modelDidFinishLoad:) withObject:self];
 }
 
@@ -138,7 +138,7 @@
         [_delegates perform:@selector(modelDidCancelLoad:) withObject:self];
     } else if(_fakeLoadingTimer) {
         TT_INVALIDATE_TIMER(_fakeLoadingTimer);
-        [_delegates perform:@selector(modelDidCancelLoad:) withObject:self];    
+        [_delegates perform:@selector(modelDidCancelLoad:) withObject:self];
     }
 }
 
@@ -152,7 +152,7 @@
 
 - (void)search:(NSString*)text {
     [self cancel];
-    
+
     TT_RELEASE_SAFELY(_names);
     if (text.length) {
         if (_fakeSearchDuration) {
@@ -205,7 +205,7 @@
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
     self.items = [NSMutableArray array];
     self.sections = [NSMutableArray array];
-    
+
     NSMutableDictionary* groups = [NSMutableDictionary dictionary];
     for (NSString* name in _addressBook.names) {
         NSString* letter = [NSString stringWithFormat:@"%C", [name characterAtIndex:0]];
@@ -214,11 +214,11 @@
             section = [NSMutableArray array];
             [groups setObject:section forKey:letter];
         }
-        
+
         TTTableItem* item = [TTTableTextItem itemWithText:name URL:nil];
         [section addObject:item];
     }
-    
+
     NSArray* letters = [groups.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     for (NSString* letter in letters) {
         NSArray* items = [groups objectForKey:letter];
@@ -265,7 +265,7 @@
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
     self.items = [NSMutableArray array];
-    
+
     for (NSString* name in _addressBook.names) {
         TTTableItem* item = [TTTableTextItem itemWithText:name URL:@"http://google.com"];
         [_items addObject:item];

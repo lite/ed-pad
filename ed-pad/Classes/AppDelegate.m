@@ -30,12 +30,12 @@
     } else {
         NSLog(@"This is not an iPad device.");
     }
-    
+
     [NSThread sleepForTimeInterval:2.0];
-    
+
     TTNavigator* navigator = [TTNavigator navigator];
     [navigator setPersistenceMode:TTNavigatorPersistenceModeAll];
-    
+
     TTURLMap* map = navigator.URLMap;
     [map from:@"*" toViewController:[TTWebController class]];
     [map from:@"tt://tabbar" toSharedViewController:[TabBarController class]];

@@ -20,7 +20,7 @@
 	[category release];
 	[description release];
 	[imageURL release];
-	
+
 	[super dealloc];
 }
 

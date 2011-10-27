@@ -18,7 +18,7 @@ CFRunLoopRef currentLoop;
 	float xx = [acceleration x];
 	float yy = -[acceleration y];
 	device_angle = M_PI / 2.0f - atan2(yy, xx);
-	
+
 	CFRunLoopStop(currentLoop);
 }
 
@@ -28,13 +28,13 @@ CFRunLoopRef currentLoop;
 	// NSLog( @"Running in the simulator!" );
 	switch (self.orientation)
 	{
-		case UIDeviceOrientationPortrait: 
+		case UIDeviceOrientationPortrait:
 			return 0.0f;
 		case UIDeviceOrientationPortraitUpsideDown:
 			return M_PI;
-		case UIDeviceOrientationLandscapeLeft: 
+		case UIDeviceOrientationLandscapeLeft:
 			return -(M_PI/2.0f);
-		case UIDeviceOrientationLandscapeRight: 
+		case UIDeviceOrientationLandscapeRight:
 			return (M_PI/2.0f);
 		default:
 			return 0.0f;
@@ -42,12 +42,12 @@ CFRunLoopRef currentLoop;
 #else
 	id accelerometer_delegate = [UIAccelerometer sharedAccelerometer].delegate;
 	[UIAccelerometer sharedAccelerometer].delegate = self;
-	
+
 	// Wait for a reading
 	currentLoop = CFRunLoopGetCurrent();
 	CFRunLoopRun();
 	[UIAccelerometer sharedAccelerometer].delegate = accelerometer_delegate;
-	
+
 	return device_angle;
 #endif
 }
@@ -63,7 +63,7 @@ CFRunLoopRef currentLoop;
 		case UIDeviceOrientationLandscapeRight: {dOrientation = (M_PI/2.0f); break;}
 		default: break;
 	}
-	
+
 	float adjustedAngle = fmod(self.orientationAngle - dOrientation, 2.0f * M_PI);
 	if (adjustedAngle > (M_PI + 0.01f)) adjustedAngle = (adjustedAngle - 2.0f * M_PI);
 	return adjustedAngle;

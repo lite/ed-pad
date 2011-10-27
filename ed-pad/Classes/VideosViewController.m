@@ -1,6 +1,6 @@
 #import "VideosViewController.h"
 
-#import <iAd/ADBannerView.h> 
+#import <iAd/ADBannerView.h>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -11,7 +11,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
+
     ADBannerView *banner = [[ADBannerView alloc] init];
     banner.delegate = self;
     banner.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
@@ -20,7 +20,7 @@
     banner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     [self.view addSubview:banner];
     [banner release];
-    
+
     return self;
 }
 
@@ -39,7 +39,7 @@
 }
 
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait|UIInterfaceOrientationPortrait);
 }
 
