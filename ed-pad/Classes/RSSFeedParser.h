@@ -12,7 +12,7 @@
 
 @interface RSSFeedParser : NSObject<NSXMLParserDelegate> {
 	NSMutableArray *items;
-	
+
 	NSMutableDictionary *currentItem;
 	NSMutableString *currentTitle;
 	NSMutableString *currentDate;
@@ -21,9 +21,9 @@
 	NSMutableString *currentDescription;
 	NSMutableString *currentImageURL;
 	NSString *currentElement;
-	
+
 	NSXMLParser *xmlParser;
-	
+
 	id<RSSFeedParserDelegate> delegate;
 }
 

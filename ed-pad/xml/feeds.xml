@@ -2,13 +2,13 @@
 <channel>
 <item>
     <title>title1</title>
-    <link>link</link>                                  
+    <link>link</link>
     <pubDate></pubDate>
     <description>desc1</description>
 </item>
 <item>
     <title>title2</title>
-    <link>link</link>                                  
+    <link>link</link>
     <pubDate></pubDate>
     <description>desc2</description>
 </item>

@@ -11,7 +11,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         _delegate = nil;
-        
+
         self.title = @"Schedule";
         self.dataSource = [[[MockDataSource alloc] init] autorelease];
     }
@@ -25,13 +25,13 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // UIViewController
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation { 
-    return YES; 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return YES;
 }
 
 - (void)loadView {
     [super loadView];
-    
+
     TTTableViewController* searchController = [[[TTTableViewController alloc] init] autorelease];
     searchController.dataSource = [[[MockSearchDataSource alloc] initWithDuration:1.5] autorelease];
     self.searchViewController = searchController;

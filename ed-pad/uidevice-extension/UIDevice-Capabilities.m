@@ -8,10 +8,10 @@
 #import <dlfcn.h>
 
 /*
- 
+
  THIS CATEGORY IS NOT APP STORE SAFE AT THIS TIME. DO NOT USE IN PRODUCTION CODE.
  YOU CAN, HOWEVER, USE THIS TO HELP BUILD YOUR OWN CUSTOM CODE TO PRE_COMPUTE CAPABILITIES.
- 
+
  */
 
 #define GRAPHICS_SERVICES_PATH	"/System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices"
@@ -55,7 +55,7 @@
 		if ([self supportsCapability:capability])
 			[array addObject:capability];
 	}
-	
+
 	return array;
 }
 @end

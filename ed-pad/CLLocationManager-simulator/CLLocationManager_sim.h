@@ -26,7 +26,7 @@
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU Lesser General Public License for more details.
-//  
+//
 //  You should have received a copy of the GNU Lesser General Public License
 //  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 //-----------------------------------------------------------------------------
@@ -34,8 +34,8 @@
 #import <CoreLocation/CoreLocation.h>
 
 #if TARGET_IPHONE_SIMULATOR
-typedef enum { simLatitude, simLongitude, simAltitude, 
-	simTimestamp, simHorizontalAccuracy, simVerticalAccuracy, 
+typedef enum { simLatitude, simLongitude, simAltitude,
+	simTimestamp, simHorizontalAccuracy, simVerticalAccuracy,
 	simHeading, simSpeed, N_STATE_DATA } SimStateType;
 
 @interface CLLocationManager_sim : CLLocationManager <CLLocationManagerDelegate>
@@ -43,7 +43,7 @@ typedef enum { simLatitude, simLongitude, simAltitude,
 	// replacements for super's ivars:
 	id<CLLocationManagerDelegate> simDelegate;	// delegate
 	CLLocation* simLocation;			// last reported location
-	
+
 	//---------------------------------
 	// ivars to support simulation:
 	//---------------------------------
